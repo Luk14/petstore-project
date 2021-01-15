@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <title>Create a Pet!</title>
+</head>
+
+<body>
+    <div class="container text-center">
+        <h1>Create a pet!</h1>
+        <br />
+        <div class="container">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="input-group mb-3">
+                            <label class="input-group-text" for="inputGroupSelect01">Category</label>
+                            <select class="form-select" id="pet-category">
+                                <option value="gun-dog" selected>Gun Dog</option>
+                                <option value="toy-dog">Toy Dog</option>
+                                <option value="utility-dog">Utility Dog</option>
+                                <option value="hound-dog">Hound Dog</option>
+                                <option value="terrier">Terrier</option>
+                                <option value="pastoral">Pastoral</option>
+                                <option value="working-dog">Working dog</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="input-group flex-nowrap">
+                            <span class="input-group-text" id="addon-wrapping">Name</span>
+                            <input type="text" class="form-control" placeholder="Name" aria-label="Name"
+                                aria-describedby="addon-wrapping" id="pet-name">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="d-grid gap-2 col-6 mx-auto">
+                            <button class="btn btn-primary" type="button" id="crt-pet-btn">Create Pet</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+    <script src="create-pet.js"></script>
+</body>
+
+</html>
