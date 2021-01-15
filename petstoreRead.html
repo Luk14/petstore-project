@@ -21,7 +21,8 @@
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
                         <a class="nav-item nav-link" href="index.html">&ThickSpace; Home</a>
-                        <a class="nav-item nav-link active" href="#">&ThickSpace;<u>Read</u><span class="sr-only"></span></a>
+                        <a class="nav-item nav-link active" href="#">&ThickSpace;<u>Read</u><span
+                                class="sr-only"></span></a>
                         <a class="nav-item nav-link" href="create-pet.html">&ThickSpace; Add</a>
                     </div>
                 </div>
@@ -31,35 +32,42 @@
         <br />
         <h1 class="text-center">Read all pets</h1>
         <br />
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3">
-                    <label>What would you like to View?</label>
-                            <select id="readOptions" class="form-select" name="readOptions">
-                                <option selected>--</option>
-                                <option>available</option>
-                                <option>pending</option>
-                                <option>sold</option>
-                            </select>
+        <div class="container text-center">
+            <div class="row text-center">
+                <div class="col-md-4 text-center">
+                    <select id="readOptions" class="form-select" name="readOptions">
+                        <option selected>Please select what you would like to View?</option>
+                        <option>available</option>
+                        <option>pending</option>
+                        <option>sold</option>
+                    </select>
+                </div>
+                <div class="col-md-1 text-center">
                     <button class="btn btn-dark" id="confirmRead" onClick="readAllPets();">Confirm</button>
                 </div>
+            </div>
+            <br />
+            <div class=row>
                 <div class="col-md-2">
                     <div class="form-floating">
                         <input type="number" name="id" id="petID" class="form-control" placeholder="Enter ID:" />
                         <label for="name">Enter ID:</label>
-                        <input type="button" value="submit" id="ReadOne" onClick="readPetByID();" />
                     </div>
                 </div>
+                <div class="col-md-1 text-center">
+                <input type="button" value="submit" id="ReadOne" onClick="readPetByID();" />
             </div>
-            <div id="pets"></div>
+        </div>
+    </div>
+    <div id="pets"></div>
 
 
 
 
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
-                integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
-                crossorigin="anonymous"></script>
-            <script src="petRead.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+    <script src="petRead.js"></script>
 </body>
 
 </html>
