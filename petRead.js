@@ -29,7 +29,9 @@ const readPetByID = () => {
     fetch(FETCHURL2 + petID.value,{ method : "GET", headers : {"Content-Type" : "application/json"
 }
 }).then(response => response.json())
-.then(json => console.log(json))
+.then(json => {
+    alert(`Your pet has been Found! \n\n ID: ${json.id}\n Name: ${json.name}\n Category: ${json.category.name}`);
+    console.log(json)})
 .catch(err => console.log("Stop "));
     
 }
