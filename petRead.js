@@ -2,10 +2,9 @@
 
 const FETCHURL1 = "https://petstore.swagger.io/v2/store/inventory";
 const FETCHURL2 = "https://petstore.swagger.io/v2/pet/";
-const FETCHURL3 = "https://petstore.swagger.io/v2/pet/available";
 const pets = document.querySelector("#pets");
 const petID = document.querySelector("#petID");
-
+const readOptions = document.querySelector("#readOptions");
 
 const read = () => {
     fetch(FETCHURL1).then((response) => {
@@ -36,5 +35,9 @@ const readPetByID = () => {
 }
 
 const readAllPets = () => {
-    fetch()
+    fetch(FETCHURL2 + "findByStatus?status=" + readOptions.value,{
+        method : "GET"
+    }).then(response => response.json())
+    .then(json => console.log(json))
+    .catch(err => console.log("Stop "));
 }

@@ -21,8 +21,8 @@
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
                         <a class="nav-item nav-link" href="index.html">&ThickSpace; Home</a>
-                        <a class="nav-item nav-link active" href="#">&ThickSpace;<u>Read</u><span
-                                class="sr-only"></span></a>
+                        <a class="nav-item nav-link active" href="#">&ThickSpace;<u>Read</u><span class="sr-only"></span></a>
+                        <a class="nav-item nav-link" href="create-pet.html">&ThickSpace; Add</a>
                     </div>
                 </div>
             </nav>
@@ -33,8 +33,15 @@
         <br />
         <div class="container">
             <div class="row">
-                <div class="col-sm-1">
-                    <button class="btn btn-dark" id="ReadAll" onClick="readAll();">View all pets</button>
+                <div class="col-md-3">
+                    <label>What would you like to View?</label>
+                            <select id="readOptions" class="form-select" name="readOptions">
+                                <option selected>--</option>
+                                <option>available</option>
+                                <option>pending</option>
+                                <option>sold</option>
+                            </select>
+                    <button class="btn btn-dark" id="confirmRead" onClick="readAllPets();">Confirm</button>
                 </div>
                 <div class="col-md-2">
                     <div class="form-floating">
